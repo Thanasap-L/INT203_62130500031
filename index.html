@@ -5,40 +5,428 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fungjaizine - The stories behind Thai music</title>
-    <!-- https://google.github.io/material-design-icons/#icon-font-for-the-web -->
-    <!-- Using via Google Web Fonts -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
     <!-- https://tailwindcss.com/docs/installation -->
     <!-- Using Tailwind via CDN -->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
 
-    <!-- https://v3.vuejs.org/guide/installation.html#release-notes -->
-    <!-- Vue CDN -->
-    <script src="https://unpkg.com/vue@next"></script>
-
     <!-- Front family Baijamjuree-->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Front family Prompt-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="font-sans">
-    <div class="bg-black">
+<body style="font-family: 'Bai Jamjuree', sans-serif; background-color: #001247;" class="text-lg">
+    <!--navbar -->
+    <header class="bg-black">
         <a href="./index.html">
             <img class="max-h-24 mx-auto py-2" src="./images/logo.png" alt="Funjaizine">
+            <img src="./images/search.png" class="h-6 ml-auto pr-96 -mt-10">
         </a>
-        <div>
-            <div class="text-white space-x-4 font-bold mx-auto">
-                <p class="inline">Home</p>
-                <p class="inline">+Interview</p>
-                <p class="inline">+Article</p>
-                <p class="inline">+Hot and Trending</p>
-                <p class="inline">+Quick Read</p>
-                <p class="inline">+News</p>
-            </div>
-            <img src="./images/search.png" class="h-6 ml-auto">
+        <div class="w-full pt-4">
+            <ul class="w-2/3 text-white font-bold mx-auto grid grid-cols-6 text-base mt-2">
+                <li><a href="./index.html" class="col-span-1 text-center">Home</a></li>
+                <li><a href="#" class="col-span-1 text-center">+Interview</a></li>
+                <li><a href="#" class="col-span-1 text-center">+Article</a></li>
+                <li><a href="#" class="col-span-1 text-center">+Hot and Trending</a></li>
+                <li><a href="#" class="col-span-1 text-center">+Quick Read</a></li>
+                <li><a href="#" class="col-span-1 text-center">+News</a></li>
+            </ul>
         </div>
+    </header>
+
+    <!-- Hot News -->
+    <div class="w-3/5 mx-auto">
+        <img src="./images/pre1.jpeg" class="tranforms" id="img-container">
+        <div class="text-white bg-black p-5" style="font-family: 'Prompt', sans-serif;">
+            <div class="float-right">
+                <a href="#"><img class="inline w-5" src="./images/whitecircle.png"></a>
+                <a href="#"><img class="inline w-5" src="./images/button.png"></a>
+                <a href="#"><img class="inline w-5" src="./images/button.png"></a>
+                <a href="#"><img class="inline w-5" src="./images/button.png"></a>
+                <a href="#"><img class="inline w-5" src="./images/button.png"></a>
+                <a href="#"><img class="inline w-5" src="./images/button.png"></a>
+            </div>
+            <p class="flex-initial text-2xl p-0.5">เป้ อารักษ์ เล่นใหญ่ในอัลบัม BIG อยากให้ได้ฟังจริงๆนะ</p>
+        </div>
+    </div>
+
+    <!-- Information -->
+    <!-- White bg -->
+    <div class="h-full grid bg-white w-3/5 mx-auto px-20">
+
+        <div class="text-center">
+            <br>
+            <h1 class="text-4xl font-bold">Fungjaizine</h1>
+            <p class="py-5 text-xl">ติดตามเรื่องราวเกี่ยวกับเพลงไทยนอกกระแส</p>
+        </div>
+
+        <!-- Interview -->
+        <h2 class="mx-5 text-3xl font-semibold">Interview</h2>
+        <div class="grid grid-cols-3 grid-row-3 px-5 pt-2">
+            <div class="relative text-white col-span-2 row-span-3 p-2">
+                <a href="#">
+                    <img src="./images/pre1.jpeg" class="w-full">
+                    <div class="absolute bg-black bottom-12 p-2 text-base">Interviews
+                    </div>
+                </a>
+            </div>
+            <div class="px-2 ml-auto col-span-1">
+                <a href="#">
+                    <h4 class="font-medium text-2xl row-span-1">'ให้มีคนด่า ดีกว่าไม่มีคนฟัง' เป้ อารักษ์
+                        เล่นใหญ่ในอัลบั้ม BIG
+                        อยากให้ได้ฟังจริง ๆ นะ</h4>
+                    <p class="text-base py-3 row-span-1">เป้ อารักษ์ ได้เผยกับทีม Fungjaizine ว่า ในอัลบั้ม BIG
+                        เขาตั้งใจจะปล่อยทุกเพลง
+                        เดือนละเพลง แต่กับเพลง
+                        'ฉันเห็นหน้าเธอฉันเจอแต่ปัญหา' ได้สร้าง 'ปัญหา' ให้กับเขา ตรงที่พอใส่ชื่อวิดิโอใน YouTube ไปว่า
+                        Pae
+                        Arak (เป้ อารักษ์) เป็นคนร้อง กลับไม่มีใครกดฟัง! ทำให้เขาแก้เกมในเพลง 'เพื่อนที่ทำงาน'
+                        ที่เพิ่งปล่อยไป
+                        ด้วยการไม่ใส่ชื่อศิลปินซะเลย! มาดูกันว่า ข้อสันนิษฐานนี้เป็นจริงหรือไม่</p>
+                    <p class="opacity-50 row-span-1">October 30, 2020</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Articles -->
+        <div class="grid grid-cols-2 pt-4">
+            <h2 class="mx-5 text-3xl font-semibold col-span-1">Article</h2>
+            <a href="#" class="text-base font-semibold text-right col-span-1">Read more</a>
+        </div>
+
+        <div class="grid grid-cols-2">
+            <!-- First Article -->
+            <div class="col-span-1 p-4">
+                <a href="#">
+                    <div class="relative text-white row-span-1">
+                        <img src="./images/ac1.jpg" class="w-full">
+                        <div class="absolute bg-black bottom-0 p-2 text-base font-semibold">Articles
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <h4 class="font-medium text-xl py-2">เติมคนในช่องว่าง: เซ็งอะไรอะ BellyTheBear ขอเซ็งด้วยดิ!
+                        ถาม-ตอบชีวิตในปี 2020</h4>
+                    <p class="text-base py-2">'เงินซื้อความรักไม่ได้ หัวใจเธอก็เช่นกัน' กล่าวโดย 1 ในสมาชิก
+                        BellyTheBear
+                        วงดนตรีหน้าใหม่ที่หวังดีเสมอ
+                        อยากเป็นเพื่อนทุกคนที่เขารัก 1 ในผลงานของ YEEZAA ที่หลาย ๆ คนอาจยังไม่คุ้นเคยกับเขา
+                        เราก็เลยมีคำถามเล็ก
+                        ๆ น้อย ๆ ให้พวกเขาลงลายมือ อวดงานศิลปะของตัวเองผ่าน 'เติมคนในช่องว่าง' กับชีวิตในปี 2020
+                        และสิ่งที่พวกเขาต้องการ ไปรู้จักพวกเขากันเลยยยยยยย </p>
+                    <p class="opacity-50 font-black">December 16, 2020</p>
+                </a>
+            </div>
+
+            <!-- Second Acticle -->
+            <div class="col-span-1 p-4">
+                <a href="#">
+                    <div class="relative text-white row-span-1">
+                        <img src="./images/ac2.jpg" class="w-full">
+                        <div class="absolute bg-black bottom-0 p-2 text-base font-semibold">Articles
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <h4 class="font-medium text-xl py-2">เติมคนในช่องว่าง: ถาม-ตอบ กับ ‘jukputjr.’ จาก YEEZAA
+                        ยินดีที่ได้รู้จักนะชาวภูมิดำริ</h4>
+                    <p class="text-base py-2">อีกหนึ่งดาวรุ่งที่กำลังพุ่งแรงจาก YEEZAA ตัวเขามีชื่อว่า jukputjr.
+                        ส่งตรงจาก 54-52 ถ.ภูมิดำริ นั่นเป็นชื่อเพลงใหม่ของพวกเขาด้วย
+                        วันนี้เรามารู้จักตัวตนเขาให้มากขึ้นผ่านทางตัวอักษรและภาพวาดของเขา <br>ไปจ้าา!</p>
+                    <p class="opacity-50 font-black">December 9, 2020</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick Read -->
+        <div class="py-10">
+            <div class="grid grid-cols-2">
+                <h2 class="mx-5 text-3xl font-semibold col-span-1">Quick Read</h2>
+                <a href="#" class="text-base font-semibold text-right col-span-1">Read more</a>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-4 font-medium">
+            <!-- QR: First col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white row-span-1">
+                    <a href="#">
+                        <img src="./images/guide1.jpg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">Quick Read
+                        </div>
+                </div>
+                <p class="text-base py-2">ชวนฟัง 10 เพลงเพราะจาก The Queen's Gambit
+                    อีกหนึ่งซีรีส์ที่มาแรงที่สุดในปี
+                    2020</p>
+                </a>
+            </div>
+
+            <!-- QR: Second col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white row-span-1">
+                    <a href="#">
+                        <img src="./images/guide2.jpg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">Quick Read
+                        </div>
+                </div>
+                <p class="text-base py-2">Written By…. ชวนฟังเพลย์ลิสต์ Spotify
+                    ที่แบ่งตามผลงานของนักแต่งเพลง
+                </p>
+                </a>
+            </div>
+
+            <!-- QR: Third col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white row-span-1">
+                    <a href="#">
+                        <img src="./images/guide3.jpg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">Quick Read
+                        </div>
+                </div>
+                <p class="text-base py-2">เมื่อไม่มีงานดนตรี ศิลปินเหล่านี้ขายอะไรช่วง COVID-19?</p>
+                </a>
+            </div>
+
+            <!-- QR: Fourth col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white row-span-1">
+                    <a href="#">
+                        <img src="./images/guide4.jpg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">Quick Read
+                        </div>
+                </div>
+                <p class="text-base py-2">คลื่นวิทยุออนไลน์น่าสนใจจากทั่วโลก ชวนหมุนหน้าปัดไปหาอะไรใหม่ ๆ
+                    ฟัง
+                </p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Seperate HR line -->
+        <div class="pt-10">
+            <hr class="border-4 border-black border-solid">
+        </div>
+
+        <!-- Update -->
+        <div class="text-center pt-7">
+            <h1 class="text-4xl font-bold">Update</h1>
+            <p class="py-5 text-xl">อัพเดทเรื่องราวล่าสุด</p>
+        </div>
+
+        <!-- Hot & Trending -->
+        <div class="grid grid-cols-2 pt-2">
+            <h2 class="mx-2 text-3xl font-semibold col-span-1">Hot & Trending</h2>
+            <a href="#" class="text-base font-semibold text-right col-span-1">Read more</a>
+        </div>
+
+        <div class="grid grid-cols-2">
+            <!-- First Hot & Trending -->
+            <div class="col-span-1 p-4">
+                <a href="#">
+                    <div class="relative text-white">
+                        <img src="./images/hot1.jpg" class="w-full">
+                        <div class="absolute bg-black bottom-0 p-2 text-base font-semibold">Hot & Trending
+                        </div>
+                    </div>
+                    <h4 class="font-medium text-xl py-2">กาขาวสยายปีกพร้อมโบยบิน 'The Whitest Crow' กลับมาแล้ว!
+                        กับ
+                        'ดอกไม้ในหนังสือหน้าที่ 75'</h4>
+                    <p class="text-base py-2">การกลับมาของ The Whitest Crow ณ บ้านหลังใหม่ New Folder จาก genie
+                        records
+                        ที่กลับมาคราวนี้พร้อมกับเพลงภาษาไทยที่สวยทั้งภาษาและดนตรี 'ดอกไม้ในหนังสือหน้าที่ 75'
+                        เพลงที่ไม่อยากให้พลาดแม้แต่นิดเดียว!</p>
+                    <p class="opacity-50 font-black">December 6, 2020</p>
+                </a>
+            </div>
+
+            <!-- Second Hot & Trending -->
+            <div class="col-span-1 p-4">
+                <a href="#">
+                    <div class="relative text-white">
+                        <img src="./images/hot2.jpg" class="w-full">
+                        <div class="absolute bg-black bottom-0 p-2 text-base font-semibold">Hot & Trending
+                        </div>
+                    </div>
+                    <h4 class="font-medium text-xl py-2">ส่งเพลงแทนคำขอบคุณกับ Baby, I Love You
+                        ซิงเกิลที่สองในอัลบั้มใหม่ของ My Life As Ali Thomas</h4>
+                    <p class="text-base py-2">หลังจากเปิดตัวอัลบั้ม Peppermint Town ไปกับเพลง Dear All The
+                        Universe
+                        วง
+                        My
+                        Life As Ali Thomas ก็กลับมากับเพลงหวาน ๆ ที่ชวนเราไปขอบคุณความรักที่มีให้กันเสมอมาในเพลง
+                        Baby, I
+                        Love You</p>
+                    <p class="opacity-50 font-black">November 9, 2020</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- 4 cols under Hot & Trending -->
+        <div class="grid grid-cols-4 font-medium pt-1">
+            <!-- HT: First col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white">
+                    <a href="#">
+                        <img src="./images/ht1.jpeg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">Hot and Trending
+                        </div>
+                </div>
+                <h4 class="font-medium text-xl py-2">PREP วงดนตรีป๊อปอังกฤษ ขวัญใจชาวไทย ปล่อยผลงาน ‘PREP’
+                    อัลบั้มเต็มแรกในชีวิตแล้ววันนี้</h4>
+                <p class="opacity-50 font-black">October 30, 2020</p>
+                </a>
+            </div>
+            <!-- HT: Second col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white">
+                    <a href="#">
+                        <img src="./images/ht2.jpg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">Hot and Trending
+                        </div>
+                </div>
+                <h4 class="font-medium text-xl py-2">quicksand bed ส่งเพลงใหม่ ‘Road of Vacation’
+                    มาให้ทุกคนได้เพิ่มลงเพลย์ลิสต์ฟังเพลินระหว่างเดินทาง</h4>
+                <p class="opacity-50 font-black">October 28, 2020</p>
+                </a>
+            </div>
+            <!-- HT: Third col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white">
+                    <a href="#">
+                        <img src="./images/ht3.jpeg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">Hot and Trending
+                        </div>
+                </div>
+                <h4 class="font-medium text-xl py-2">ล่องลอยไปในความฝันกับ Peppermint Town อัลบั้มใหม่จาก My Life As Ali
+                    Thomas</h4>
+                <p class="opacity-50 font-black">September 14, 2020</p>
+                </a>
+            </div>
+            <!-- HT: Fourth col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white">
+                    <a href="#">
+                        <img src="./images/ht4.jpg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">Hot and Trending
+                        </div>
+                </div>
+                <h4 class="font-medium text-xl py-2">Vijit Tawan พาทุกคนไปค้นหา 'เส้นทางสู่ทะเล'
+                    เพลงสำหรับทุกการเริ่มต้นใหม่อีกครั้ง</h4>
+                <p class="opacity-50 font-black">September 9, 2020</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- News -->
+        <div class="grid grid-cols-2 pt-2">
+            <h2 class="mx-2 text-3xl font-semibold col-span-1">News</h2>
+            <a href="#" class="text-base font-semibold text-right col-span-1">Read more</a>
+        </div>
+
+        <div class="grid grid-cols-4 font-medium pt-1">
+            <!-- N: First col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white">
+                    <a href="#">
+                        <img src="./images/news1.jpg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">News
+                        </div>
+                </div>
+                <h4 class="font-medium text-xl py-2">‘วง เอลิซ’ โกอินเตอร์ร่วมงานกับญี่ปุ่น
+                    ถ่ายเอ็มวีกึ่งอนิเมะในเพลงใหม่
+                    ‘โกเมนนาไซ’</h4>
+                <p class="opacity-50 font-black">January 29, 2021</p>
+                </a>
+            </div>
+            <!-- N: Second col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white">
+                    <a href="#">
+                        <img src="./images/news2.jpg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">News
+                        </div>
+                </div>
+                <h4 class="font-medium text-xl py-2">'อิมเมจ' กลับมาพร้อมซิงเกิ้ลใหม่ 'ไม่มี' กับความทรงจำดี ๆ
+                    ที่ไม่เคยมีอาจจะดีกว่า</h4>
+                <p class="opacity-50 font-black">January 29, 2021</p>
+                </a>
+            </div>
+            <!-- Nw: Third col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white">
+                    <a href="#">
+                        <img src="./images/news3.jpg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">News
+                        </div>
+                </div>
+                <h4 class="font-medium text-xl py-2">'tie a tie' ศิลปินเบอร์แรกจากค่าย Citadel Sound
+                    ส่งอัลบั้มเต็มมาให้ทุกคนได้ลิ้มรสพร้อมกันกับ 'SOFTSERVE'</h4>
+                <p class="opacity-50 font-black">January 29, 2021</p>
+                </a>
+            </div>
+            <!-- N: Fourth col -->
+            <div class="col-span-1 p-4">
+                <div class="relative text-white">
+                    <a href="#">
+                        <img src="./images/new4.jpeg" class="w-full">
+                        <div class="absolute bg-black p-2 text-base font-bold bottom-0">News
+                        </div>
+                </div>
+                <h4 class="font-medium text-xl py-2">เรื่องเล่าจักรวาลจากคุณแม่ถึงเด็กน้อย Dadi & Mami feat. พรั่งพรู
+                    ซิงเกิ้ลใหม่รับวันเด็กจาก Roots Tone</h4>
+                <p class="opacity-50 font-black">January 9, 2021</p>
+                </a>
+            </div>
+        </div>
+
+        <!-- Seperate HR line -->
+        <div class="pt-10">
+            <hr class="border-4 border-black border-solid">
+        </div>
+
+        <!-- Update -->
+        <footer>
+            <div class="text-center pt-7">
+                <h1 class="text-4xl font-bold">Who are we?</h1>
+            </div>
+
+            <div class="py-2 grid grid-cols-2 divide-x divide-black">
+                <div class="col-span-1 px-4">
+                    <h4 class="font-semibold text-xl">Fungjaizine.com</h4>
+                    <p class="text-base py-4">ฟังใจคือชุมชนทางดนตรีที่เชื่อมศิลปินและแฟนเพลงทางเข้าด้วยกัน
+                        ผ่านแพลตฟอร์มและกิจกรรมออนไลน์และออฟไลน์ ไม่ว่าจะเป็นมิวสิกสตรีมมิ่ง นิตยสารดนตรี คอนเสิร์ต
+                        และการสัมมนาทางดนตรี</p>
+                </div>
+
+                <div class="col-span-1 px-4">
+                    <h4 class="font-semibold text-xl ">Follow Us</h4>
+                    <div class="grid grid-cols-3 text-base font-bold pt-5">
+                        <div class="relative text-white col-span-1 ">
+                            <a href="#" class="absolute bg-black py-1 px-2">Facebook</a>
+                        </div>
+
+                        <div class="relative text-white col-span-1">
+                            <a href="#" class="absolute bg-black py-1 px-2">Twitter</a>
+                        </div>
+
+                        <div class="relative text-white col-span-1">
+                            <a href="#" class="absolute bg-black py-1 px-2">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center font-sm pt-2 opacity-75">
+                Create by Thanasap Leelapisuth 62130500031
+            </div>
+        </footer>
+
+        <!-- White BG -->
     </div>
 </body>
 
