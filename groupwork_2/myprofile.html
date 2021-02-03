@@ -33,19 +33,19 @@
               <h3 class="text-2xl" v-if>{{name}}</h3> <span v-if>{{position}}</span>
             </div>
             <div class="flex justify-between items-center p-3 bg-gray-200 rounded-lg">
-              <div class="mr-3"> <span class="text-gray-400 block" v-if>{{article}}</span> <span
-                  class="font-bold text-black text-xl" v-if>{{numar}}</span> </div>
-              <div class="mr-3"> <span class="text-gray-400 block" v-if>{{follower}}</span> <span
-                  class="font-bold text-black text-xl" v-if>{{numfol}}</span> </div>
-              <div> <span class="text-gray-400 block" v-if>{{rate}}</span> <span
-                  class="font-bold text-black text-xl" v-if>{{numrate}}</span> </div>
+              <div class="mr-3"> <span class="text-gray-400 block">Article</span> <span
+                  class="font-bold text-black text-xl" v-if>{{article}}</span> </div>
+              <div class="mr-3"> <span class="text-gray-400 block">Follwers</span> <span
+                  class="font-bold text-black text-xl" v-if>{{follower}}</span> </div>
+              <div> <span class="text-gray-400 block">Ratings</span> <span
+                  class="font-bold text-black text-xl" v-if>{{rating}}</span> </div>
             </div>
           </div>
         </div>
         <div class="flex justify-between items-center mt-2 gap-2"> <button
-            class="w-full h-12 rounded-md border-2 text-md hover:shadow hover:bg-red-700 hover:border-red-700 hover:text-white " v-if>{{bt1}}</button>
+            class="w-full h-12 rounded-md border-2 text-md hover:shadow hover:bg-red-700 hover:border-red-700 hover:text-white ">Follow</button>
           <button
-            class="w-full h-12 rounded-md bg-blue-700 text-white text-md hover:shadow hover:bg-blue-800" v-if>{{bt2}}</button>
+            class="w-full h-12 rounded-md bg-blue-700 text-white text-md hover:shadow hover:bg-blue-800">Chat</button>
         </div>
       </div>
     </div>
