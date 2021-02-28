@@ -28,7 +28,7 @@ const app = {
             search: '',
             canvas: false,
             notFound: false,
-            zoomIn: [''],
+            zoomIn: '',
             shown: false
         }
     },
