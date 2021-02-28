@@ -28,7 +28,7 @@ const app = {
             search: '',
             canvas: false,
             notFound: false,
-            zoomIn: '',
+            zoomIn: [''],
             shown: false
         }
     },
@@ -45,7 +45,7 @@ const app = {
             this.canvas = false;
         },
         zoomImg(index){
-            this.zoomIn = this.img[index].url;
+            this.zoomIn = this.img[index];
         },
         shownImg(){
             this.shown = !this.shown;
